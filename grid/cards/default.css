@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
+}
+input {
+  font-size: 32px;
+}

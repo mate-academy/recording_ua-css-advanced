@@ -1,0 +1,29 @@
+.container {
+  border: 3px solid #000;
+  padding: 10px 20px;
+
+  height: 500px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(2, 180px);
+  gap: 20px 10px;
+
+  grid-auto-flow: row;
+  grid-auto-columns: 50px;
+  grid-auto-rows: 100px;
+
+  justify-items: stretch;
+  align-items: stretch;
+
+  justify-content: space-evenly;
+  align-content: space-between;
+}
+
+.card {
+  /* width: 50px; */
+  /* height: 70px; */
+
+  border: 2px solid #00f;
+  background-color: yellowgreen;
+}

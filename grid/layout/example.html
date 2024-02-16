@@ -1,0 +1,84 @@
+<!-- #region head -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example</title>
+</head>
+<!-- #endregion -->
+<body>
+  <div class="container">
+    <div class="box header">Header</div>
+    <div class="box sidebar">Sidebar</div>
+    <div class="box ads">Ads</div>
+    <div class="box main">Main Content</div>
+    <div class="box news">News</div>
+    <div class="box footer">Footer</div>
+  </div>
+
+  <p>Example!</p>
+
+  <style>
+    /* #region default */
+    body {
+      margin: 0;
+      color: #fff;
+      font-weight: 800;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    p {
+      padding: 10px;
+      margin: 0;
+      top: 0;
+      right: 0;
+      position: fixed;
+      color: red;
+    }
+    /* #endregion */
+    .container {
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr 1fr 3fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+
+      grid-template-areas: 
+        "header header header"
+        "sidebar ads ads"
+        "sidebar main news"
+        "footer footer footer"
+      ;
+    }
+    .box {
+      padding: 1em;
+    }
+    .header {
+      grid-area: header;
+      background-color: #253b4a;
+    }
+    .sidebar {
+      grid-area: sidebar;
+      background-color: #ffbc00;
+    }
+    .ads {
+      grid-area: ads;
+      background-color: #257d92;
+    }
+    .main {
+      grid-area: main;
+      background-color: #ff530d;
+    }
+    .news {
+      grid-area: news;
+      background-color: #ffbc00;
+    }
+    .footer {
+      grid-area: footer;
+      background-color: #257d92;
+    }
+  </style>
+</body>
+</html>

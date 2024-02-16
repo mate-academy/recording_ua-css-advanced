@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  gap: 8px;
+}
+
+.link  {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+}
+
+.link {
+  height: 100px;
+  background-color: #ccc;
+  cursor: pointer;
+  /* transition-duration: 1s;
+  transition-property: height;
+  transition-timing-function: steps(4, end); */
+  transition: height 1s steps(4, end) 500ms;
+}
+
+.link:hover {
+  background-color: #aaa;
+  height: 600px;
+}

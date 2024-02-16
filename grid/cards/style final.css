@@ -1,0 +1,37 @@
+.container {
+  --column-count: 1;
+  border: 3px solid #000;
+  padding: 10px 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  row-gap: 20px;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+@media (min-width: 300px) {
+  .container {
+    --column-count: 2;
+  }
+}
+
+@media (min-width: 400px) {
+  .container {
+    --column-count: 3;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    --column-count: auto-fill;
+  }
+}
+
+.card {
+  /* width: 100px; */
+  height: 150px;
+
+  border: 2px solid #00f;
+  background-color: yellowgreen;
+}
